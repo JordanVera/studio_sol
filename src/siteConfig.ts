@@ -1,0 +1,18 @@
+export const siteConfig = {
+  businessName: 'Fiore by Haydee',
+  ownerName: 'Haydee',
+  location: 'Portland, OR',
+  tagline: 'Flowers for the beautifully ordinary.',
+  email: 'hello@example.com',
+  phone: '(503) 555-0148',
+  phoneHref: '+15035550148',
+  city: 'Portland',
+  state: 'OR',
+  zip: '97214',
+  address: '123 Garden Lane, Portland, OR 97214',
+  hours: 'Tuesday–Saturday, 9am–5pm',
+  deliveryZips: ['97202', '97206', '97212', '97214', '97215', '97232'],
+  instagramUrl: 'https://www.instagram.com/',
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com',
+  demo: true,
+};
