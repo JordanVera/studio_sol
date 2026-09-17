@@ -10,10 +10,10 @@ export default function About() {
           <Image
             src="/sol.PNG"
             alt="Flowers gathered at our local studio"
-            fill
+            width={1203}
+            height={1501}
             priority
-            className="object-contain h-full w-full"
-            style={{ objectPosition: 'center' }}
+            className="h-auto w-full"
           />
         </div>
         <div className="story-copy">

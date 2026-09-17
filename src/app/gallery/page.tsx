@@ -9,10 +9,7 @@ export default function Page() {
         <h1>
           A few things we’ve <em>made with love.</em>
         </h1>
-        <p>
-          Celebrations, quiet gestures, and flowers just because. Take a closer
-          look.
-        </p>
+
         <Gallery />
         <div id="instagram-feed" data-integration="instagram" />
       </section>

@@ -166,9 +166,9 @@ export default function Home() {
           <Image
             src="/sol.PNG"
             alt="Seasonal flowers in an independent floral studio"
-            fill
-            className="object-contain h-full w-full"
-            style={{ objectPosition: 'center' }}
+            width={1203}
+            height={1501}
+            className="h-auto w-full"
           />
         </div>
         <div className="story-copy">

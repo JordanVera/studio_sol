@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { Menu, X, Camera, ArrowUpRight, Flower2 } from 'lucide-react';
 import { siteConfig as c } from '@/siteConfig';
+import Image from 'next/image';
 export function Header() {
   const [open, S] = useState(false);
   const path = usePathname();
@@ -23,7 +24,7 @@ export function Header() {
       </div>
       <header className="header">
         <Link href="/" className="brand" aria-label={c.businessName + ' home'}>
-          fiore<span>BY HAYDEE</span>
+          <img src="/logo.png" alt="Studio Sol" className="h-12 w-auto" />
         </Link>
         <nav className={open ? 'nav open' : 'nav'} aria-label="Main navigation">
           {links.map(([name, url]) => (
@@ -61,7 +62,7 @@ export function Footer() {
       <div className="footer-grid">
         <div>
           <Link href="/" className="brand">
-            fiore<span>BY HAYDEE</span>
+            <img src="/logo.png" alt="Studio Sol" className="h-12 w-auto" />
           </Link>
           <p>
             Locally rooted. Lovingly arranged.
