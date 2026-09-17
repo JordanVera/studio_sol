@@ -87,21 +87,11 @@ export default function Home() {
           </div>
         </motion.div>
         <div className="hero-photo">
-          {[
-            '/images/hero.jpg',
-            '/images/bouquet-1.jpg',
-            '/images/bouquet-2.jpg',
-          ].map((src, i) => (
+          {arrangements.slice(0, 3).map((item, i) => (
             <Image
-              key={src}
-              src={src}
-              alt={
-                [
-                  'Lush pink garden roses and seasonal blooms',
-                  'A joyful seasonal bouquet',
-                  'Soft blush flowers arranged with care',
-                ][i]
-              }
+              key={item.id}
+              src={item.image}
+              alt={item.description}
               fill
               priority={i === 0}
               sizes="(max-width: 760px) 100vw, 50vw"
@@ -174,10 +164,11 @@ export default function Home() {
       <section className="story-split">
         <div className="story-photo">
           <Image
-            src="/images/studio.jpg"
+            src="/sol.PNG"
             alt="Seasonal flowers in an independent floral studio"
             fill
-            sizes="(max-width:760px) 100vw, 50vw"
+            className="object-contain h-full w-full"
+            style={{ objectPosition: 'center' }}
           />
         </div>
         <div className="story-copy">

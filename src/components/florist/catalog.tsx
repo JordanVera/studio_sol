@@ -18,6 +18,7 @@ export function ArrangementCard({
           src={p.image}
           alt={p.description}
           fill
+          className="object-contain"
           sizes="(max-width: 600px) 90vw, (max-width: 900px) 45vw, 30vw"
         />
         <span className="product-tag">{p.tag}</span>

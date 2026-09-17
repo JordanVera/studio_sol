@@ -23,6 +23,8 @@
 # misc
 .DS_Store
 *.pem
+scripts/.venv/
+scripts/.gallery-staging/
 
 # debug
 npm-debug.log*

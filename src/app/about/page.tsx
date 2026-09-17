@@ -8,11 +8,12 @@ export default function About() {
       <section className="story-split about-story">
         <div className="story-photo">
           <Image
-            src="/images/studio.jpg"
+            src="/sol.PNG"
             alt="Flowers gathered at our local studio"
             fill
-            sizes="(max-width:760px) 100vw, 50vw"
             priority
+            className="object-contain h-full w-full"
+            style={{ objectPosition: 'center' }}
           />
         </div>
         <div className="story-copy">
